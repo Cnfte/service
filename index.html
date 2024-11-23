@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cnfteの小站</title>
+    <link rel="stylesheet" href="dh.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="mt.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="an.css"> 
+    <style>
+        body {
+            text-align: center;
+            /* 设置按钮的背景色和文字颜色 */
+.my-button {
+    background-color: #96C6B0; /* 绿色背景 */
+    color: #88D2DE; /* 文字颜色为白色 */
+    border: none; /* 去掉按钮的边框 */
+    padding: 15px 32px; /* 设置按钮的内边距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 去掉文字下划线 */
+    display: inline-block; /* 设置按钮为内联块元素 */
+    font-size: 16px; /* 设置字体大小 */
+    cursor: pointer; /* 鼠标悬停时变成手形光标 */
+    border-radius: 8px; /* 设置圆角 */
+}
+
+/* 设置鼠标悬停时的颜色变化 */
+.my-button:hover {
+    background-color: #79A881; /* 悬停时更深的绿色 */
+}
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="https://cnfte.github.io/">首页</a></li>
+      <li><a href="https://cnfte.github.io/aboutme/">关于</a></li>
+      <li><a href="https://cnfte.github.io/Contact-me/">联系</a></li>
+    </ul>
+  </nav>
+    <h1>演示：如何在网页中嵌套网页</h1>
+    
+    <!-- 使用iframe嵌入另一个网页 -->
+    <iframe src="http://baidu.com/" width="300" height="400" frameborder="0">
+        你的浏览器不支持该服务
+    </iframe>
+    <video width="640" height="360" controls>
+        <source src="http://music.163.com/song/media/outer/url?id=2134028566.mp3" type="video/mp4">
+    </video>
+    <h1>测试站by cnfte</h1>
+    <a href="https://github.com/Cnfte/">访问我的github主页</a>
+    <p>
+        
+    </p>
+    <a href="https://klpbbs.com/home.php?mod=space&do=profile&mobile=2">访问我的苦力怕论坛主页</a>
+    <p>
+        
+    </p>
+    <a href="https://mcpps.cn/author/2503">访问我的MCPPS论坛主页</a>
+        <p>
+        
+        </p>
+    <a href="http://www.minecraft.net/">访问Minecraft官网</a>
+        <p>
+        
+        </p>
+    <a href="https://bluearchive-cn.com/">访问蔚蓝档案官网</a>
+        <p>
+        
+        </p>
+    <audio id="backgroundMusic" loop>
+        <source src="http://music.163.com/song/media/outer/url?id=4010213.mp3" type="audio/mp3">
+        您的浏览器不支持音频元素。
+    </audio>
+
+    <!-- 播放按钮 -->
+    <button onclick="playMusic()">播放背景音乐</button>
+    <!-- 停止按钮 -->
+    <button onclick="stopMusic()">停止背景音乐</button>
+
+    <script>
+        // 获取音频元素
+        const music = document.getElementById('backgroundMusic');
+
+        // 播放音频
+        function playMusic() {
+            music.play();
+        }
+
+        // 停止音频
+        function stopMusic() {
+            music.pause();
+            music.currentTime = 0;  // 将音频回到开头
+        }
+    </script>
+</body>
+</html>
